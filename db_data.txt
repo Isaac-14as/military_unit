@@ -1,0 +1,26 @@
+   data_job_title = [
+        {'name': 'командир'},
+        {'name': 'зам командира'},
+        {'name': 'нач штаба'},
+        {'name': 'зам нач штаба'},
+        ]
+    data_rank = [
+        {'name': 'прапорщик'},
+        {'name': 'старший прапорщик'},
+        {'name': 'младший лейтенант'},
+        {'name': 'лейтенант'},
+        {'name': 'старший лейтенант'},
+        {'name': 'капитан'},
+        {'name': 'майор'},
+        {'name': 'подполковник'},
+        {'name': 'полковник'},
+    ]
+    data_subdivision = [
+        {'name': 'командование'},
+        {'name': 'штаб'},
+        {'name': 'служба горючего'},
+        {'name': 'прод служба'},
+        ]
+op.bulk_insert(job_title_table, data_job_title)
+op.bulk_insert(rank_table, data_rank)
+op.bulk_insert(subdivision_table, data_subdivision)
